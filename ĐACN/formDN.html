@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Đăng Nhập</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>Vietnam News</h1>
+      </div>
+      <div class="header-right">
+        <input type="text" placeholder="Tìm kiếm...">
+      </div>
+    </div>
+  </header>
+  
+  <nav>
+    <ul class="menu">
+      <li><a href="home.html">Trang Chủ</a></li>
+      <li id="menuDangKy"><a href="formDK.html">Đăng Ký</a></li>
+      <li id="menuDangNhap"><a href="formDN.html">Đăng Nhập</a></li>
+      <li id="menuUsers" style="display: none;"><a href="users.html">Danh sách User</a></li>
+      <li id="menuPost" style="display: none;"><a href="Post.html">Post bài mới</a></li>
+      <li id="menuDangXuat" style="display: none;">Đăng xuất</a></li>
+    </ul>
+  </nav>
+  
+  <div class="flex-container">
+    <div class="form-section">
+      <h2>Đăng nhập</h2>
+      <form id="loginForm">
+        <input type="text" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Mật khẩu" required>
+        <button type="submit">Đăng nhập</button>
+      </form>
+    </div>
+    <div class="image-section">
+      <img src="https://kenh14cdn.com/2018/12/18/img4544-15451413420501492129729-crop-15451413523511303995002.jpg" alt="Hình minh họa">
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Vietnam News. All rights reserved.</p>
+  </footer>
+  
+  <script type="module" src="DN.js"></script>
+  <script src="dangXuat.js"></script>
+
+  
+  <!-- <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      let email = document.getElementById("email").value.trim();
+      let password = document.getElementById("password").value;
+      
+      if (!email || !password) {
+        alert("Vui lòng nhập đầy đủ email và mật khẩu.");
+        return;
+      }
+      
+      let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Email không hợp lệ.");
+        return;
+      }
+      
+      alert("Đăng nhập thành công!");
+    });
+  </script> -->
+</body>
+</html>
